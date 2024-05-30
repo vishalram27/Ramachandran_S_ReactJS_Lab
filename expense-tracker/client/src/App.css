@@ -1,0 +1,287 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  border-radius: 5px;
+  height: auto;
+  text-align: center;
+  background-color: rgb(220, 233, 149);
+  padding: 20px;
+}
+
+footer {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+p,
+h1 {
+  padding: 10px;
+  margin: 0;
+}
+
+section {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+}
+
+article {
+  min-width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+  background-color: white;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+input,
+label,
+p,
+#district {
+  font-size: 16px;
+}
+
+.form-button {
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 200px;
+  font-size: large;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(220, 233, 149);
+}
+
+#district {
+  height: 50px;
+}
+
+header p {
+  text-align: left;
+}
+
+article p {
+  font-weight: bold;
+  font-family: Helvetica;
+  letter-spacing: 2px;
+}
+
+input:focus {
+  outline: none;
+  background-color: gainsboro;
+}
+
+header p::first-line {
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.582);
+}
+
+article p::after {
+  content: "*";
+  color: red;
+}
+
+input[name^="option"] {
+  width: 20px;
+  height: 20px;
+}
+
+#page-Header {
+  background-color: rgba(5, 5, 5, 0.61);
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 50px;
+  color: rgb(186, 253, 0);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#Add-Button {
+  font-size: large;
+  padding: 20px;
+  width: 10%;
+  height: auto;
+  background-color: chartreuse;
+  position: fixed;
+  top: 120px;
+  right: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+.use-inline {
+  width: 30%;
+  font-size: large;
+  padding: 20px;
+  margin: 5px 5px;
+  display: inline-block;
+  background-color: darkgray;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.date {
+  font-size: large;
+  width: 10%;
+  background-color: rgb(161, 59, 149);
+}
+
+.price {
+  width: 7%;
+  background-color: rgb(163, 103, 219);
+}
+
+.total {
+  width: auto;
+  font-size: large;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(255, 0, 170);
+}
+
+.Ramesh,
+.Rahul {
+  width: 9%;
+}
+
+.Rahul {
+  background-color: rgb(36, 184, 31);
+}
+
+.Ramesh {
+  background-color: rgb(208, 189, 65);
+}
+
+.form {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+.payable {
+  background-color: #01c5ffb8;
+}
+
+.App {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.header-color {
+  text-align: center;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border: 1px solid steelblue;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  section {
+    width: 70%;
+  }
+
+  #Add-Button {
+    right: 20px;
+    width: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+  }
+
+  header,
+  footer {
+    text-align: center;
+  }
+
+  .use-inline {
+    width: 100%;
+    font-size: large;
+    margin: 10px 0;
+  }
+
+  #Add-Button {
+    position: inherit;
+    margin-left: 35%;
+    width: 25%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+
+  .responsive-table th,
+  .responsive-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .total {
+    font-size: large;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-button,
+  .use-inline {
+    padding: 10px;
+    font-size: medium;
+  }
+
+  #Add-Button {
+    position: inherit;
+    margin-left: 35%;
+    font-size: large;
+    padding: 10px;
+    width: 30%;
+  }
+
+  .responsive-table th,
+  .responsive-table td {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .total {
+    font-size: medium;
+    padding: 10px;
+  }
+}

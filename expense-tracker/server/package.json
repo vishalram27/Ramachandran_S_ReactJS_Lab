@@ -1,0 +1,12 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "reactjs-lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "tracking-test",
+    "start": "json-server db.json --port 5000"
+  },
+  "author": "",
+  "license": "ISC"
+}
